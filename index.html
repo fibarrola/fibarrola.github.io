@@ -7,41 +7,55 @@
     <title>Francisco Ibarrola - Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Francisco Ibarrola</h1>
-        <p>Machine Learning Engineer | Mathematician</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Mathematician with a PhD in Engineering in Computational Intelligence, specialized in developing custom AI models for
-        practical applications, including Generative Models, Computer Vision, Natural Language Processing and Anomaly detection.
-        Proficient in multidisciplinary collaboration and mathematical modeling, with a demonstrated ability to swiftly conceptualize
-        and deliver effective solutions across a wide variety of domains. Skilled in developing ML APIs and Back-end systems for
-        AI integration into software applications.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Co-Creative Drawing AI</h3>
-            <img src="media/cicada_results.png" width="100%" alt="CICADA results">
-
-            <p>CICADA is a collaborative, interactive and context-aware drawing agent for co-creative design. Based on Contrastive Learning (CLIP) and Differentiable Rasterization (DIFFVG), our model allows users to engage with the AI in an interactive manner, as opposed to the most common generative models, that replace the designer in the process.
-                You can have a look at the interface, Reframer, in the video below.
-            </p>
-            <div class="videowrapper">
-            <iframe src="https://www.youtube.com/embed/0-TfH4lWs7M?si=TK0LeAgSiIuI2qKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+    <div class="container">
+        <div class="sidebar">
+            <header>
+                <img src="media/IMG_2363.jpg" alt="Your Photo" width="256px" height="">
+                <h1>Francisco Ibarrola</h1>
+                <p>Machine Learning Engineer | Mathematician</p>
+            </header>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>Mathematician with a PhD in Engineering in Computational Intelligence, specialized in developing custom AI models for
+                        practical applications, including Generative Models, Computer Vision, Natural Language Processing and Anomaly detection.
+                        Proficient in multidisciplinary collaboration and mathematical modeling, with a demonstrated ability to swiftly conceptualize
+                        and deliver effective solutions across a wide variety of domains. Skilled in developing ML APIs and Back-end systems for
+                        AI integration into software applications.</p>
+                </div>
+            </section>
         </div>
-        <!-- Add more projects as needed -->
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: linkedin.com/yourprofile</p>
-    </section>
+        <div class="content">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Co-Creative Drawing AI</h3>
+                    <img src="media/cicada_results.png" width="100%" alt="CICADA results">
+        
+                    <p>CICADA is a collaborative, interactive and context-aware drawing agent for co-creative design. Based on Contrastive Learning (CLIP) and Differentiable Rasterization (DIFFVG), our model allows users to engage with the AI in an interactive manner, as opposed to the most common generative models, that replace the designer in the process.
+                        You can have a look at the interface, Reframer, in the video below.
+                    </p>
+                    <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/0-TfH4lWs7M?si=TK0LeAgSiIuI2qKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: your.email@example.com</p>
+                <p>LinkedIn: linkedin.com/yourprofile</p>
+            </section>
+
+            <section id="video">
+                <h2>Featured Video</h2>
+                <!-- Replace the "YOUR_VIDEO_ID" with the actual ID of your YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </section>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
