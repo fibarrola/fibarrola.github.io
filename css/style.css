@@ -71,7 +71,7 @@ h3 {
 
 a {
 text-decoration: none;
-display: flex;
+display: block;
 }
 
 .icon-link {
@@ -85,3 +85,13 @@ display: flex;
     display: flex;
     margin-bottom: 10px;
 }
+
+hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }

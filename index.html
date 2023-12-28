@@ -17,18 +17,21 @@
                 <p>Machine Learning Engineer | Mathematician</p>
             </header>
             <br>
+            <section id="contact" style="display: flex; margin: auto; width:fit-content">         
+                <a href="https://www.linkedin.com/in/fibarrola/" style="color:white"><i class="fa fa-linkedin-square" style="font-size:24px"></i> </a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/fibarrola" style="color:white"><i class="fa fa-github" style="font-size:24px"></i></a>
+                &nbsp;&nbsp;
+                <a href="mailto: francisco.ibarrola@outlook.com" style="color:white"><i class="fa fa-envelope" style="font-size:24px"></i></a>
+            </section>
+            <br>
             <section id="about">
                 <!-- <h2>About Me</h2> -->
                 <div class="about-content">
                     <p>Mathematician, PhD in Engineering in Computational Intelligence. I have a chat about the problem,
                         develop a mathematical model, and start coding.</p>
+                    <p style="padding-top: 1em;">Here's some of my work...</p>
                 </div>
-            </section>
-            <br>
-            <section id="contact">
-                <!-- <a href="francisco.ibarrola@outlook.com" style="color:white"><i class="fa fa-envelope" style="font-size:24px"></i> &nbsp;francisco.ibarrola@outlook.com </a> -->
-                <a href="https://github.com/fibarrola" style="color:white"><i class="fa fa-github" style="font-size:24px"></i> &nbsp;fibarrola </a>
-                <a href="https://www.linkedin.com/in/fibarrola/" style="color:white"><i class="fa fa-linkedin-square" style="font-size:24px"></i> &nbsp;fibarrola </a>
             </section>
         </div>
 
@@ -45,6 +48,29 @@
                     </div>
                     <p>CICADA is a collaborative, interactive and context-aware drawing agent for co-creative design. This models seeks to steer away from the paradigm of one-shot generation
                         and bring the humans back in the loop by allowing real-time interaction. The video below shows the model in action as users interact with the interface. 
+                    </p>
+                    <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/0-TfH4lWs7M?si=TK0LeAgSiIuI2qKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="project">
+                    <img src="media/cicada_results.png" width="100%" alt="CICADA results">
+                    <h3 style="margin:0px">Affect-Conditioned Image Generation</h3>
+                    <div class="icon-tab">
+                        <a href="https://github.com/fibarrola/affect_conditioned_generation" class="icon-link"><i class="fa fa-github"></i></a>
+                        &nbsp;
+                        <a href="https://arxiv.org/abs/2302.09742" class="icon-link"><i class="fa fa-file-text"></i></a>
+                    </div>
+                    <p>Creating an image evoking certain affect in the viewer can be challenging through prompt-writing alone. Instead, we propose controlling affective content
+                        through a three-dimensional space used by psychologist to assert how an image or sentence makes you feel in terms of Valence (happy vs unhappy), Arousal
+                        (excited vs calm) and Dominance (in control vs submissive).
+                    </p>
+                    <p>
+                        After training a neural network to predict affect based on language embeddings, we developed two affect-conditioning models to work with 
+                        generation-by-optimization methods such as VQGAN+CLIP or prompt-conditioned generators such as Stable Diffusion.
                     </p>
                     <div class="videowrapper">
                     <iframe src="https://www.youtube.com/embed/0-TfH4lWs7M?si=TK0LeAgSiIuI2qKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
