@@ -54,16 +54,15 @@ body {
     clear: both;
     width: 100%;
     position: relative;
-    padding-bottom: 56.25%;
     padding-top: 25px;
-    height: 0;
+    display: block;
+    margin: auto;
 }
 .videowrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    display: block;
+    margin: auto;
+    width: 512px;
+    height: 288px;
 }
 
 h3 {
@@ -73,4 +72,16 @@ h3 {
 a {
 text-decoration: none;
 display: flex;
+}
+
+.icon-link {
+    color: #333;
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.icon-tab {
+    display: flex;
+    margin-bottom: 10px;
 }
