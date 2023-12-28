@@ -47,7 +47,16 @@
                         <a href="https://doi.ieeecomputersociety.org/10.1109/TVCG.2023.3293853" class="icon-link"><i class="fa fa-file-text"></i></a>
                     </div>
                     <p>CICADA is a collaborative, interactive and context-aware drawing agent for co-creative design. This models seeks to steer away from the paradigm of one-shot generation
-                        and bring the humans back in the loop by allowing real-time interaction. The video below shows the model in action as users interact with the interface. 
+                        and bring the humans back in the loop by allowing real-time interaction.
+                    </p>
+                    <p>
+                        The model combines CLIPDraw with penalization methods to build a custom cost function which takes the user's input into account in a flexible way. This
+                        lets the AI to bend the user's input without writing over nor disregarding it. Pruning and reinitialization methods are introduced to prevent thre process
+                        from getting stuck.
+                    </p>
+                    <p>
+                        The interface allows for real-time control over some of the model's parameters by using sliders, and choosing which parts of the drawing are
+                        finished and not to be messed with. The prompt can also be changed at any instance if the user has a better idea. Check out the video!
                     </p>
                     <div class="videowrapper">
                     <iframe src="https://www.youtube.com/embed/0-TfH4lWs7M?si=TK0LeAgSiIuI2qKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -57,7 +66,7 @@
                 <hr>
 
                 <div class="project">
-                    <img src="media/cicada_results.png" width="100%" alt="CICADA results">
+                    <img src="media/affect_diagram.png" width="100%" alt="affect control flowchart">
                     <h3 style="margin:0px">Affect-Conditioned Image Generation</h3>
                     <div class="icon-tab">
                         <a href="https://github.com/fibarrola/affect_conditioned_generation" class="icon-link"><i class="fa fa-github"></i></a>
@@ -72,8 +81,38 @@
                         After training a neural network to predict affect based on language embeddings, we developed two affect-conditioning models to work with 
                         generation-by-optimization methods such as VQGAN+CLIP or prompt-conditioned generators such as Stable Diffusion.
                     </p>
-                    <div class="videowrapper">
-                    <iframe src="https://www.youtube.com/embed/0-TfH4lWs7M?si=TK0LeAgSiIuI2qKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>
+                        The figure shows an example of "a flaming landscape" generated with VQGAN and affect control.
+                    </p>
+                    <div class="figure">
+                        <div class="img-row">
+                            <div class="img-container">
+                                <img src="media/flaming_landscape_highV.png" width="100%">
+                                <p class="caption">happy (high valence)</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="media/flaming_landscape_highA.png" width="100%">
+                                <p class="caption">excited (high Arousal)</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="media/flaming_landscape_highD.png" width="100%">
+                                <p class="caption">in control (high Dominance)</p>
+                            </div>
+                        </div>
+                        <div class="img-row">
+                            <div class="img-container">
+                                <img src="media/flaming_landscape_lowV.png" width="100%">
+                                <p class="caption">unhappy (low valence)</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="media/flaming_landscape_lowA.png" width="100%">
+                                <p class="caption">calm (low Arousal)</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="media/flaming_landscape_lowD.png" width="100%">
+                                <p class="caption">submissive (low Dominance)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Add more projects as needed -->
