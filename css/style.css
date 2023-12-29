@@ -112,3 +112,52 @@ hr {
     margin: auto;
     width: fit-content;
 }
+
+
+/* Slider */
+
+.slider-wrapper {
+    padding-top: 2em;
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  .slides img {
+    width: 100%;
+    display: none;
+  }
+  
+  .slides img:first-child {
+    display: block;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 7px 5px 7px ;
+    background: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

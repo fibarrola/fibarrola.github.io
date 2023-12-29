@@ -82,44 +82,55 @@
                         generation-by-optimization methods such as VQGAN+CLIP or prompt-conditioned generators such as Stable Diffusion.
                     </p>
                     <p>
-                        The figure shows an example of "a flaming landscape" generated with VQGAN and affect control.
+                        You can play around with the following images of "a river", generated with Stable Diffusion to see how it works.
                     </p>
-                    <div class="figure">
-                        <div class="img-row">
-                            <div class="img-container">
-                                <img src="media/flaming_landscape_highV.png" width="100%">
-                                <p class="caption">happy (high valence)</p>
+                    <div class="slider-wrapper">
+                        <div class="slider" id="sliderV">
+                            <p class="caption">Valence</p>
+                            <div class="slides">
+                                <img src="media/sd_affect/7__V_0.png" alt="0 valence image">
+                                <img src="media/sd_affect/7__V_25.png" alt="25 valence image">
+                                <img src="media/sd_affect/7__V_50.png" alt="50 valence image">
+                                <img src="media/sd_affect/7__V_75.png" alt="75 valence image">
+                                <img src="media/sd_affect/7__V_100.png" alt="100 valence image">
                             </div>
-                            <div class="img-container">
-                                <img src="media/flaming_landscape_highA.png" width="100%">
-                                <p class="caption">excited (high Arousal)</p>
-                            </div>
-                            <div class="img-container">
-                                <img src="media/flaming_landscape_highD.png" width="100%">
-                                <p class="caption">in control (high Dominance)</p>
-                            </div>
+                            <button class="prev" onclick="changeSlide(-1, 'sliderV')"><i class="fa fa-minus"></i></button>
+                            <button class="next" onclick="changeSlide(1, 'sliderV')"><i class="fa fa-plus"></i></button>
                         </div>
-                        <div class="img-row">
-                            <div class="img-container">
-                                <img src="media/flaming_landscape_lowV.png" width="100%">
-                                <p class="caption">unhappy (low valence)</p>
+                        <div class="slider" id="sliderA">
+                            <p class="caption">Arousal</p>
+                            <div class="slides">
+                                <img src="media/sd_affect/7__A_0.png" alt="0 Arousal image">
+                                <img src="media/sd_affect/7__A_25.png" alt="25 Arousal image">
+                                <img src="media/sd_affect/7__A_50.png" alt="50 Arousal image">
+                                <img src="media/sd_affect/7__A_75.png" alt="75 Arousal image">
+                                <img src="media/sd_affect/7__A_100.png" alt="100 Arousal image">
                             </div>
-                            <div class="img-container">
-                                <img src="media/flaming_landscape_lowA.png" width="100%">
-                                <p class="caption">calm (low Arousal)</p>
+                            <button class="prev" onclick="changeSlide(-1, 'sliderA')"><i class="fa fa-minus"></i></button>
+                            <button class="next" onclick="changeSlide(1, 'sliderA')"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="slider" id="sliderD">
+                            <p class="caption">Dominance</p>
+                            <div class="slides">
+                                <img src="media/sd_affect/7__D_0.png" alt="0 Dominance image">
+                                <img src="media/sd_affect/7__D_25.png" alt="25 Dominance image">
+                                <img src="media/sd_affect/7__D_50.png" alt="50 Dominance image">
+                                <img src="media/sd_affect/7__D_75.png" alt="75 Dominance image">
+                                <img src="media/sd_affect/7__D_100.png" alt="100 Dominance image">
                             </div>
-                            <div class="img-container">
-                                <img src="media/flaming_landscape_lowD.png" width="100%">
-                                <p class="caption">submissive (low Dominance)</p>
-                            </div>
+                            <button class="prev" onclick="changeSlide(-1, 'sliderD')"><i class="fa fa-minus"></i></button>
+                            <button class="next" onclick="changeSlide(1, 'sliderD')"><i class="fa fa-plus"></i></button>
                         </div>
                     </div>
+                    <br>
+                    <p>
+                        Naturally, the method works for any prompt, and also allows for controlling more than one affect dimension at once, but running Stable
+                        Diffusion takes some computing power. However, if you have a GPU and want to see it in action, you may
+                        clone the <a href="https://github.com/fibarrola/affect_conditioned_generation" style="display: inline; text-decoration: underline;">Github repo</i></a>,
+                        install and run it locally.
+                    </p>      
                 </div>
-                <!-- Add more projects as needed -->
             </section>
-
-            
-
         </div>
     </div>
 
