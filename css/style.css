@@ -9,6 +9,15 @@ body {
     font-size: 16px;
 }
 
+#under-construction {
+    color: #555;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 2em;    
+}
+
 .container {
     display: flex;
 }
@@ -20,7 +29,9 @@ body {
     padding: 40px;
     position: fixed;
     height: 100%;
-    overflow-y: auto;   
+    overflow-y: auto;
+    background-image: url("../media/bg.png");
+    background-size: cover;
 }
 
 .sidebar header {
