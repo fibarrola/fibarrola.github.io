@@ -20,7 +20,9 @@ body {
     padding: 40px;
     position: fixed;
     height: 100%;
-    overflow-y: auto;   
+    overflow-y: auto;
+    background-image: url("../media/bg.png");
+    background-size: cover;
 }
 
 .sidebar header {
